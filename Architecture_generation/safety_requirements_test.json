@@ -1,0 +1,26 @@
+[
+  {
+    "id": "REQ-001",
+    "related_function": "Air Data Acquisition",
+    "description": "Loss of air data leading to loss of control",
+    "severity": "Catastrophic",
+    "focus": "Availability",
+    "design_error": false
+  },
+  {
+    "id": "REQ-002",
+    "related_function": "Pitch Control Actuation",
+    "description": "Uncommanded motor operation",
+    "severity": "Hazardous",
+    "focus": "Integrity",
+    "design_error": false
+  },
+  {
+    "id": "REQ-003",
+    "related_function": "Flight Control Laws",
+    "description": "Complex software error",
+    "severity": "Catastrophic",
+    "focus": "Integrity",
+    "design_error": true
+  }
+]

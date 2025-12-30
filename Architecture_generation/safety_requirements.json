@@ -1,0 +1,26 @@
+[
+  {
+    "id": "REQ-001",
+    "related_function": "Air Data Acquisition",
+    "description": "Erroneous Attitude Data",
+    "severity": "Catastrophic",
+    "focus": "Integrity",
+    "design_error": false
+  },
+  {
+    "id": "REQ-002",
+    "related_function": "Flight Control Laws",
+    "description": "Loss of Pitch Control",
+    "severity": "Catastrophic",
+    "focus": "Integrity",
+    "design_error": true
+  },
+  {
+    "id": "REQ-003",
+    "related_function": "Pitch Control Actuation",
+    "description": "Hardover M1",
+    "severity": "Hazardous",
+    "focus": "Integrity",
+    "design_error": false
+  }
+]

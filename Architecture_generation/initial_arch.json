@@ -1,0 +1,29 @@
+{
+  "components": [
+    {
+      "uid": "Sensor_ADS",
+      "type": "Sensor",
+      "failure_probability": 1e-4,
+      "name": "Air Data System",
+      "implemented_functions": ["Air Data Acquisition", "Altitude Measurement"]
+    },
+    {
+      "uid": "FCC_Core",
+      "type": "Processor",
+      "failure_probability": 1e-4,
+      "name": "Flight Control Computer",
+      "implemented_functions": ["Flight Control Laws", "Trajectory Calculation"]
+    },
+    {
+      "uid": "Motor_1",
+      "type": "Actuator",
+      "failure_probability": 1e-4,
+      "name": "Elevator Motor",
+      "implemented_functions": ["Pitch Control Actuation"]
+    }
+  ],
+  "connections": [
+    {"source": "Sensor_ADS", "target": "FCC_Core"},
+    {"source": "FCC_Core", "target": "Motor_1"}
+  ]
+}
